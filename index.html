@@ -13,14 +13,14 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="link">
-            <a href="#section-cover" class="link-active">главная</a>
+          <li class="links-list-item">
+            <a href="#section-cover" class="link link-active">главная</a>
           </li>
-          <li class="circle-marker link">
-            <a href="#lots-section">посмотреть лоты</a>
+          <li class="circle-marker links-list-item">
+            <a href="#lots-section" class="link">посмотреть лоты</a>
           </li>
-          <li class="circle-marker link">
-            <a href="#section-about">об аукционе</a>
+          <li class="circle-marker links-list-item">
+            <a href="#section-about" class="link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -40,9 +40,9 @@
     <main>
       <section class="cover" id="section-cover">
         <h1 class="cover__title">
-          <span class="aligned-text">Оно</span>
-          <span class="aligned-text_center">Тебе</span>
-          <span class="aligned-text_right">Надо</span>
+          <span class="with-letter-spacing">Оно</span>
+          <span class="aligned-text_center with-letter-spacing">Теб<span class="with-normal-spacing">е</span></span>
+          <span class="aligned-text_right">Над<span class="with-normal-spacing">о</span></span>
         </h1>
         <div class="cover__description">
           <p class="letter-spacing-extended">
@@ -54,8 +54,8 @@
       <section class="lots" id="lots-section">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <a href="#0" class="card-link">
-            <li class="lots__card-list-item card_type_film">
+          <li class="lots__card-list-item">
+            <a href="#0" class="card-link card_type_film">
               <article class="card">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
@@ -66,10 +66,10 @@
                   Андерсон?
                 </p>
               </article>
-            </li>
-          </a>
-          <a href="#0" class="card-link">
-            <li class="lots__card-list-item card_type_book">
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a href="#0" class="card-link card_type_book">
               <article class="card">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -83,10 +83,10 @@
                   Джеймса Джойса?
                 </p>
               </article>
-            </li>
-          </a>
-          <a href="#0" class="card-link">
-            <li class="lots__card-list-item card_type_picture">
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a href="#0" class="card-link card_type_picture">
               <article class="card">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
@@ -98,13 +98,13 @@
                   что это — одна из революционных работ Кандинского?
                 </p>
               </article>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
         <a href="#0" class="lots__look-more-link link">посмотреть больше</a>
       </section>
       <section class="about" id="section-about">
-        <div class="logo-column about__logo">
+        <div class="about__logo">
           <img
             src="./images/logo-white.svg"
             alt="Логотип аукциона"
@@ -123,10 +123,11 @@
           <p class="text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-            Когда-то они казались просто неудачными. Но, несмотря на критику,
-            кажущуюся простоту или сложность, сейчас без этих лотов невозможно
-            представить современную культуру. Когда в эти вещи не верил никто,
-            продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+            Когда-то они казались просто неудачными. Но, несмотря<br />на
+            критику, кажущуюся простоту или сложность, сейчас без этих лотов
+            невозможно представить современную культуру. Когда в эти вещи не
+            верил никто, продолжали верить их создатели. И сейчас эти лоты стали
+            культовыми.
           </p>
         </div>
       </section>
@@ -139,31 +140,35 @@
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="link">
-            <a href="#section-cover" class="link-active">главная</a>
+          <li class="links-list-item">
+            <a href="#section-cover" class="link link-active">главная</a>
           </li>
-          <li class="link"><a href="#lots-section">посмотреть лоты</a></li>
-          <li class="link"><a href="#section-about">об аукционе</a></li>
+          <li class="links-list-item">
+            <a href="#lots-section" class="link">посмотреть лоты</a>
+          </li>
+          <li class="links-list-item">
+            <a href="#section-about" class="link">об аукционе</a>
+          </li>
         </ul>
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-link">
           <a
             ><img
-              src="../images/yt.svg"
+              src="./images/yt.svg"
               alt="Youtube"
               class="footer__social-icon"
           /></a>
         </li>
         <li class="footer__social-link">
           <a
-            ><img src="../images/vk.svg" alt="VK" class="footer__social-icon"
+            ><img src="./images/vk.svg" alt="VK" class="footer__social-icon"
           /></a>
         </li>
         <li class="footer__social-link">
           <a
             ><img
-              src="../images/pinterest.svg"
+              src="./images/pinterest.svg"
               alt="Pinterest"
               class="footer__social-icon"
           /></a>
